@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  background-color: #F5F5F5;
+  text-decoration: none;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+header {
+  background-color: #FFFFFF;
+  width: 100%;
+  padding: 16px;
+  padding-left: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 30px;
+}
+.HeaderTop {
+  background: none;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+/*Logo Header*/
+#LogoHeader {
+  background: none;
+  width: 253px;
+  height: 44px;
+  user-select: none;
+}
+/*Search-Box*/
+.HeaderInput {
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 559px;
+  padding: 20px 8px;
+  background-color: #F5F5F5;
+  border-radius: 5px;
+}
+.HeaderInput input {
+  border: none;
+  background: none;
+  font-size: 16px;
+}
+.HeaderInput input::placeholder {
+  color: #8f8f8f;
+}
+.HeaderInput input:focus{
+  outline: none;
+}
+.HeaderTop box-icon {
+  background: none;
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+#SearchButton {
+  fill: #8f8f8f;
+}
+#SearchButton:hover {
+  fill: #C92071;
+}
+/*Header Login Area*/
+.HeaderButtons {
+  background: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.HeaderButtons a {
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.HeaderButtons #CadastroButton {
+  border: none;
+  color: #474747;
+  text-decoration: underline #474747;
+  text-underline-offset: 3px;
+}
+.HeaderButtons #LoginButton {
+  width: 114px;
+  height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #C92071;
+  color: white;
+}
+
+/*Cart Container / Container Carrinho */
+header .CartContainer {
+  background: none;
+  display: flex;
+  align-items: flex-start;
+  user-select: none;
+}
+header .CartContainer .CartNumber {
+  background-color: #C92071;
+  height: 18px;
+  width: 18px;
+  padding: 2.5px;
+  border-radius: 20px;
+  margin-left: -8px;
+  position: relative;
+  z-index: 1;
+}
+header .CartContainer .CartNumber h6 {
+  background: none;
+  font-size: 11px;
+  margin-bottom: 2px; 
+  text-align: center;  
+  color: white;
+  font-weight: bold;
+}
+header .CartContainer #CartButton {
+  background: none;
+  width: 30px;
+  cursor: pointer;
+}
+/*NavLinks*/
+header nav ul{
+  background-color: #FFFFFF;
+}
+header nav ul li{
+  display: flex;
+  background: none;
+  gap: 30px;
+}
+header nav ul li a {
+  background: none;
+  color: #474747;
+}
