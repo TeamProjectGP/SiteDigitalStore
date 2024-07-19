@@ -10,8 +10,9 @@ header {
   background-color: #FFFFFF;
   width: 100%;
   padding: 16px;
-  padding-left: 60px;
+  padding-left: 30px;
   display: flex;
+  justify-content: start;
   flex-wrap: wrap;
   align-items: center;
   row-gap: 30px;
@@ -134,4 +135,102 @@ header nav ul li{
 header nav ul li a {
   background: none;
   color: #474747;
+}
+.HomeSlide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  width: 100%;
+  background-color: #F5F5F5;
+}
+.HomeSlideContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: -20px;
+  margin-bottom: -30px;
+}
+.HomeSlideTexts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: none;
+  padding-left: 40px;
+}
+.HomeSlideTexts h6 {
+  background: none;
+  font-size: 16px;
+  padding-bottom: 10px;
+  color: #F6AA1C;
+}
+.HomeSlideTexts h1 {
+  background: none;
+  font-size: 64px;
+  line-height: 66px;
+  padding-bottom: 10px;
+}
+.HomeSlideTexts p {
+  padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: .75px;
+  background: none;
+  color: #474747;
+}
+.HomeSlideButton {
+  background: none;
+}
+.HomeSlideButton button {
+  background-color: #C92071;
+  color: white;
+  width: 220px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: .75px;
+  cursor: pointer;
+  transition-duration: 200ms;
+  user-select: none;
+}
+.HomeSlideButton button:hover {
+  background-color: #eb3c90;
+}
+#HomeSlideImg {
+  background: none;
+  padding-right: 80px;
+  user-select: none;
+}
+#HomeSlideImg img {
+  width: 700px;
+  rotate: -19deg;
+  background: none;
+}
+.HomeSliderCounterContainer {
+  display: flex;
+  gap: 10px;
+}
+.HomeSlideCounter {
+  background-color: #CCCCCC;
+  padding: 6px;
+  border-radius: 10px;
+  z-index: 1;
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+#SliderBall1.active{
+  background-color: #C92071;
+}
+#SliderBall2.active{
+  background-color: #C92071;
+}
+#SliderBall3.active{
+  background-color: #C92071;
+}
+#SliderBall4.active{
+  background-color: #C92071;
 }

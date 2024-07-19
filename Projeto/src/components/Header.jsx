@@ -1,11 +1,11 @@
-import Logo from "./Logo";
+import {HeaderLogo} from "../components/Logo"
 
 const Header = () => {
     return (
         <>
         <header>
             <section class="HeaderTop">
-            <Logo />
+            <HeaderLogo />
             <div class="HeaderInput">
                 <input type="text" placeholder="Pesquisar Produto..."/>
                 <box-icon id="SearchButton" name='search'></box-icon>
@@ -25,7 +25,7 @@ const Header = () => {
             <nav>
                 <ul>
                     <li>
-                        <a id="Home" href="#">Home</a>
+                        <a id="Home" href="/">Home</a>
                         <a id="Produtos" href="#">Produtos</a>
                         <a id="Categorias" href="#">Categorias</a>
                         <a id="Pedidos" href="#">Meus Pedidos</a>
