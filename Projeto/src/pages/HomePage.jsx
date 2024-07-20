@@ -4,7 +4,9 @@ const HomePage = () => {
     return (
         <Layout>
             <main>
-                <SliderHomePage />
+                <section>
+                    <SliderHomePage />
+                </section>
             </main>
         </Layout>
     );

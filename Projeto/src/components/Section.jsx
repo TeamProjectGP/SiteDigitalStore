@@ -14,33 +14,52 @@ export const SliderHomePage = () => {
                         </div>
                     </div>
                     <gallery id="HomeSlideImg">
-                        <img src="./public/Home-slide-1.png" alt="" />
+                        <img id="ShowSlide1" src="./public/Home-slide-1.png" alt="NikeWhiteRed" />
+                        <img id="ShowSlide2" src="./public/Home-slide-2.png" alt="Nike2" />
+                        <img id="ShowSlide3" src="./public/Home-slide-3.png" alt="Nike3" />
+                        <img id="ShowSlide4" src="./public/Home-slide-4.png" alt="Nike4" />
                     </gallery>
                 </section>
                 <div class="HomeSliderCounterContainer">
                     <section id="SliderBall1" class="HomeSlideCounter" onClick={() => {
                         SliderBall1.classList.remove("inactive");
-                        SliderBall2.classList.remove("active"); 
-                        SliderBall3.classList.remove("active"); 
-                        SliderBall4.classList.remove("active"); 
+                        ShowSlide1.classList.remove("inactive");
+                        SliderBall2.classList.remove("active");
+                        ShowSlide2.classList.remove("active"); 
+                        SliderBall3.classList.remove("active");
+                        ShowSlide3.classList.remove("active");
+                        SliderBall4.classList.remove("active");
+                        ShowSlide4.classList.remove("active"); 
                     }}></section>
                     <section id="SliderBall2" class="HomeSlideCounter" onClick={() => {
-                        SliderBall1.classList.add("inactive"); 
-                        SliderBall2.classList.add("active"); 
-                        SliderBall3.classList.remove("active"); 
-                        SliderBall4.classList.remove("active");  
+                        SliderBall1.classList.add("inactive");
+                        ShowSlide1.classList.add("inactive") 
+                        SliderBall2.classList.add("active");
+                        ShowSlide2.classList.add("active");
+                        SliderBall3.classList.remove("active");
+                        ShowSlide3.classList.remove("active"); 
+                        SliderBall4.classList.remove("active");
+                        ShowSlide4.classList.remove("active");
                     }} ></section>
                     <section id="SliderBall3" class="HomeSlideCounter" onClick={() => {
                        SliderBall1.classList.add("inactive");
-                       SliderBall2.classList.remove("active"); 
-                       SliderBall3.classList.add("active"); 
-                       SliderBall4.classList.remove("active");  
+                       ShowSlide1.classList.add("inactive");
+                       SliderBall2.classList.remove("active");
+                       ShowSlide2.classList.remove("active"); 
+                       SliderBall3.classList.add("active");
+                       ShowSlide3.classList.add("active"); 
+                       SliderBall4.classList.remove("active");
+                       ShowSlide4.classList.remove("active");  
                     }}></section>
                     <section id="SliderBall4" class="HomeSlideCounter" onClick={() => {
-                       SliderBall1.classList.add("inactive"); 
-                       SliderBall2.classList.remove("active"); 
-                       SliderBall3.classList.remove("active"); 
-                       SliderBall4.classList.add("active");  
+                       SliderBall1.classList.add("inactive");
+                       ShowSlide1.classList.add("inactive"); 
+                       SliderBall2.classList.remove("active");
+                       ShowSlide2.classList.remove("active"); 
+                       SliderBall3.classList.remove("active");
+                       ShowSlide3.classList.remove("active"); 
+                       SliderBall4.classList.add("active");
+                       ShowSlide4.classList.add("active");
                     }}></section>
                 </div>
             </section>

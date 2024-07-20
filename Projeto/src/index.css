@@ -7,10 +7,6 @@
   box-sizing: border-box;
   background: none;
 }
-
-body {
-  background-color: #F5F5F5;
-}
 header {
   background-color: #FFFFFF;
   width: 100%;
@@ -145,7 +141,6 @@ header nav ul li a {
   justify-content: center;
   align-items: center;
   padding-right: -20px;
-  margin-bottom: -30px;
 }
 .HomeSlideTexts {
   display: flex;
@@ -192,14 +187,45 @@ header nav ul li a {
   background-color: #eb3c90;
 }
 #HomeSlideImg {
-  box-sizing: border-box;
-  padding-right: 80px;
+  width: 100%;
+  padding-left: 16px;
+  margin-bottom: 0px;
   user-select: none;
 }
 #HomeSlideImg img {
-  width: 700px;
-  padding: 16px;
   rotate: -19deg;
+  transition-duration: 300ms;
+}
+#ShowSlide1 {
+  opacity: 1;
+  visibility: visible;
+}
+#ShowSlide1.inactive{
+  width: 0px;
+  padding: 0px;
+  visibility: hidden;
+  opacity: 0;
+}
+#ShowSlide2 {
+  display: none;
+}
+#ShowSlide2.active{
+  display: list-item;
+  margin-bottom: -13px;
+}
+#ShowSlide3 {
+  display: none;
+}
+#ShowSlide3.active{
+  display: list-item;
+  margin-bottom: -13px;
+}
+#ShowSlide4 {
+  display: none;
+}
+#ShowSlide4.active{
+  display: list-item;
+  margin-bottom: -13px;
 }
 .HomeSliderCounterContainer {
   display: flex;
@@ -208,6 +234,7 @@ header nav ul li a {
 .HomeSlideCounter {
   background-color: #CCCCCC;
   padding: 6px;
+  margin-bottom: 10px;
   border-radius: 10px;
   z-index: 1;
   cursor: pointer;
