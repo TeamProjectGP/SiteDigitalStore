@@ -66,6 +66,32 @@ export const SliderHomePage = () => {
     );
 }
 
+export const ColecaoDestaque = () => {
+    return (
+        <section id="ColecoesDetaque">
+            <div class="ColecoesDestaqueContainer">
+                <h2 id="DestaqueTitulo">Coleções em Destaque</h2>
+                <div class="ColecoesCardContainer">
+                    <div class="ColecoesCard">
+                        <div class="Card1ElementsContainer">
+                            <h2 id="CardDiscount">30% off</h2>
+                            <button id="CardDestaqueBtn">Comprar</button>
+                        </div>
+                        <div class="Card2ElementsContainer">
+                            <h2 id="CardDiscount">30% off</h2>
+                            <button id="CardDestaqueBtn">Comprar</button>
+                        </div>
+                        <div class="Card3ElementsContainer">
+                            <h2 id="CardDiscount">30% off</h2>
+                            <button id="CardDestaqueBtn">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+}
+
 export const Layout = ({children}) => {
     return (
         <>

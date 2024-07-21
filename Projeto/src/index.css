@@ -1,9 +1,13 @@
+@font-face {
+  font-family: Inter;
+  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+}
 * {
   margin: 0;
   background-color: #F5F5F5;
   text-decoration: none;
   list-style: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter;
   box-sizing: border-box;
   background: none;
 }
@@ -105,25 +109,35 @@ header .CartContainer .CartNumber {
 }
 header .CartContainer .CartNumber h6 {
   font-size: 11px;
-  margin-bottom: 2px; 
-  text-align: center;  
+  padding-bottom: 5px; 
+  text-align: center;
   color: white;
   font-weight: bold;
 }
 header .CartContainer #CartButton {
-  width: 30px;
+  width: 24px;
+  margin-top: 5px;
   cursor: pointer;
 }
 /*NavLinks*/
 header nav ul{
   background-color: #FFFFFF;
-}
-header nav ul li{
   display: flex;
   gap: 30px;
 }
-header nav ul li a {
+header nav ul li .LinkHeader {
+  text-decoration: none;
+  list-style: none;
   color: #474747;
+  font-weight: 400;
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+header nav ul li .LinkHeader.active {
+  color: #C92071;
+  font-weight: 700;
+  text-decoration: underline 2px solid #C92071;
+  text-underline-offset: 3px;
 }
 /*HomeSlide Ofertas*/
 .HomeSlide {
@@ -134,7 +148,6 @@ header nav ul li a {
   padding: 16px;
   width: 100%;
   background-color: #F5F5F5;
-  margin-bottom: 30px;
 }
 .HomeSlideContainer {
   display: flex;
@@ -188,17 +201,16 @@ header nav ul li a {
 }
 #HomeSlideImg {
   width: 100%;
-  padding-left: 16px;
   margin-bottom: 0px;
   user-select: none;
 }
 #HomeSlideImg img {
   rotate: -19deg;
-  transition-duration: 300ms;
 }
 #ShowSlide1 {
   opacity: 1;
   visibility: visible;
+  margin-bottom: 3px;
 }
 #ShowSlide1.inactive{
   width: 0px;
@@ -207,18 +219,26 @@ header nav ul li a {
   opacity: 0;
 }
 #ShowSlide2 {
+  opacity: 0;
+  visibility: hidden;
   display: none;
+  -webkit-transition: opacity 200ms, visibility 200ms;
+  transition: opacity 200ms, visibility 200ms;
 }
 #ShowSlide2.active{
+  visibility: visible;
+  opacity: 1;
   display: list-item;
   margin-bottom: -13px;
+  transition-duration: 200ms;
 }
 #ShowSlide3 {
   display: none;
 }
 #ShowSlide3.active{
-  display: list-item;
+  display: flex;
   margin-bottom: -13px;
+  transition-duration: 200ms;
 }
 #ShowSlide4 {
   display: none;
@@ -226,6 +246,7 @@ header nav ul li a {
 #ShowSlide4.active{
   display: list-item;
   margin-bottom: -13px;
+  transition-duration: 200ms;
 }
 .HomeSliderCounterContainer {
   display: flex;
@@ -255,14 +276,89 @@ header nav ul li a {
 #SliderBall4.active{
   background-color: #C92071;
 }
-/*Footer Container*/
-@font-face {
-  font-family: Inter;
-  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-}
-.FooterContainer {
+/*Coleção Destaque Container*/
+#ColecoesDetaque {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+.ColecoesDestaqueContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 16px;
+}
+.ColecoesDestaqueContainer #DestaqueTitulo {
+  padding-bottom: 20px;
+}
+.ColecoesCardContainer {
+  display: flex;
+  align-items: center;
+}
+.ColecoesCard {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.Card1ElementsContainer, .Card2ElementsContainer, .Card3ElementsContainer{
+  width: 405px;
+  height: 251px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 16px 18px;
+  border-radius: 8px;
+}
+.Card1ElementsContainer {
+  background: url(../public/collection-1.png) center center no-repeat;
+  padding-left: 25px;
+}
+.Card2ElementsContainer {
+  background: url(../public/collection-2.png) center center no-repeat;
+  padding-left: 32px;
+}
+.Card3ElementsContainer {
+  background: url(../public/collection-3.png) center center no-repeat;
+}
+#CardDiscount{
+  display: flex;
+  background-color: #E7FF86;
+  border-radius: 8px;
+  padding: 5px 15px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 100px;
+  color: #474747;
+  letter-spacing: .75px;
+  text-transform: uppercase;
+  text-align: center;
+}
+#CardDestaqueBtn {
+  background-color: #F5F5F5;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: .75px;
+  width: 153px;
+  height: 48px;
+  text-align: center;
+  color: #C92071;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+#CardDestaqueBtn:hover {
+  color: #FFFFFF;
+  background-color: #B5B6F2;
+}
+/*Footer Container*/
+.FooterContainer {
+  padding: 16px;
+  width: 100%;
   background-color: #1F1F1F;
   display: flex;
   flex-direction: column;
@@ -278,7 +374,6 @@ header nav ul li a {
 .FooterContainer .Copyright {
   padding: 10px;
   font-size: 13px;
-  font-family: Inter;
   font-weight: 400;
   letter-spacing: .75px;
   color: #FFFFFF;
@@ -302,7 +397,6 @@ header nav ul li a {
   user-select: none;
 }
 .FooterStartObjects h5 {
-  font-family: "Inter";
   font-size: 16px;
   letter-spacing: .75px;
   font-weight: 400;
@@ -328,7 +422,6 @@ header nav ul li a {
   display: flex;
   flex-direction: column;
   line-height: 38px;
-  font-family: Inter;
 }
 .FooterInformationContainer {
   padding-left: 80px;

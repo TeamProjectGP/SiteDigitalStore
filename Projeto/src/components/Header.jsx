@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import {HeaderLogo} from "../components/Logo"
 
 const Header = () => {
@@ -21,17 +22,15 @@ const Header = () => {
                 </div>
             </div>
             </section>
-            <br />
             <nav>
-                <ul>
-                    <li>
-                        <a id="Home" href="/">Home</a>
-                        <a id="Produtos" href="">Produtos</a>
-                        <a id="Categorias" href="#">Categorias</a>
-                        <a id="Pedidos" href="#">Meus Pedidos</a>
-                    </li>
-                </ul>
-            </nav>
+            <ul>
+                <li id="Home"><NavLink className="LinkHeader" to={"/"}>Home</NavLink></li>
+                <li id="Categorias"><NavLink className="LinkHeader" to={"/categorias"}>Categorias</NavLink></li>
+                <li id="Produtos"><NavLink className="LinkHeader" to={"/produtos"}>Produtos</NavLink></li>
+                <li id="Pedidos"><NavLink className="LinkHeader"to={"/pedidos"}>Pedidos</NavLink></li>
+            </ul>
+        </nav>
+            <br />
         </header>
         </>
         

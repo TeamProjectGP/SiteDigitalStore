@@ -1,13 +1,13 @@
 import { Layout } from "../components/Section";
 
-const ProductViewPage = () => {
+const MyRequests = () => {
     return (
         <Layout>
             <main>
-                <h1>Produtos</h1>
+                <h1>Meus Pedidos</h1>
             </main>
         </Layout>
     );
 }
  
-export default ProductViewPage;
+export default MyRequests;
