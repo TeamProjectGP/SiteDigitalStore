@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {HeaderLogo} from "../components/Logo"
 
 const Header = () => {
@@ -7,13 +7,13 @@ const Header = () => {
         <header>
             <section class="HeaderTop">
             <HeaderLogo />
-            <div class="HeaderInput">
-                <input type="text" placeholder="Pesquisar Produto..."/>
+            <div id="HeaderInput">
+                <input type="text" placeholder="Pesquisar Produto..." />
                 <box-icon id="SearchButton" name='search'></box-icon>
             </div>
             <div class="HeaderButtons">
-                <a id="CadastroButton">Cadastre-se</a>
-                <a id="LoginButton">Entrar</a>
+                <Link to={"/categorias"}id="CadastroButton">Cadastre-se</Link>
+                <Link to={"/categorias"} id="LoginButton">Entrar</Link>
             </div>
             <div class="CartContainer">
                 <img src="../src/assets/mini-cart.svg" id="CartButton" size="cssSize" alt="cart"></img>

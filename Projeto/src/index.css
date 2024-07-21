@@ -36,7 +36,7 @@ header {
   user-select: none;
 }
 /*Search-Box*/
-.HeaderInput {
+#HeaderInput {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,14 +45,18 @@ header {
   background-color: #F5F5F5;
   border-radius: 5px;
 }
-.HeaderInput input {
+#HeaderInput.active {
+  border: 2px solid #C92071;
+}
+#HeaderInput input {
   border: none;
   font-size: 16px;
+  width: 100%;
 }
-.HeaderInput input::placeholder {
+#HeaderInput input::placeholder {
   color: #8f8f8f;
 }
-.HeaderInput input:focus{
+#HeaderInput input:focus{
   outline: none;
 }
 .HeaderTop box-icon {
@@ -510,6 +514,7 @@ header nav ul li .LinkHeader.active {
   font-size: 16px;
   font-weight: 400;
   color: #FFFFFF;
+  transition-duration: 500ms;
 }
 .FooterContatoContainer h4 {
   line-height: 26px;

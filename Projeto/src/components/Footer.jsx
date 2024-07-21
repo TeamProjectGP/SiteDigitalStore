@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FooterLogo } from "./Logo";
 
 const Footer = () => {
@@ -26,12 +27,10 @@ const Footer = () => {
                     </div>
                     <div class="FooterCategoryContainer">
                         <h3>Categorias</h3>
-                        <h4><a href="#">Camisetas</a></h4>
-                        <h4><a href="#">Calças</a></h4>
-                        <h4><a href="#">Bonés</a></h4>
-                        <h4><a href="#">Headphones</a></h4>
-                        <h4><a href="#">Trabalhe conosco</a></h4>
-                        <h4><a href="#">Meus Pedidos</a></h4>
+                        <h4><Link to={"/categorias"}>Camisetas</Link></h4>
+                        <h4><Link to={"/categorias"}>Calças</Link></h4>
+                        <h4><Link to={"/categorias"}>Bonés</Link></h4>
+                        <h4><Link to={"/categorias"}>Headphones</Link></h4>
                     </div>
                     <div class="FooterContatoContainer">
                         <h3>Contato</h3>
