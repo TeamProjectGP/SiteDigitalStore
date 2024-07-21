@@ -68,6 +68,7 @@ export const SliderHomePage = () => {
 
 export const ColecaoDestaque = () => {
     return (
+        <>
         <section id="ColecoesDetaque">
             <div class="ColecoesDestaqueContainer">
                 <h2 id="DestaqueTitulo">Coleções em Destaque</h2>
@@ -89,6 +90,26 @@ export const ColecaoDestaque = () => {
                 </div>
             </div>
         </section>
+        <section class="DestaquesCategorias">
+            <div className="DestaquesCategoriasContainer">
+                <h2 id="DestaqueTitulo">Coleções em Destaque</h2>
+            </div>
+            <div className="DestaquesCategoriasIcons">
+                <span><img id="CategoriaIcons" src="../public/Shirt.png" alt="Shirt-Categories"/></span>
+                <span><img id="CategoriaIcons" src="../public/Pants.png" alt="Pants-Categories"/></span>
+                <span><img id="CategoriaIcons" src="../public/Cap.png" alt="Cap-Categories"/></span>
+                <span><img id="CategoriaIcons" src="../public/Headphones.png" alt="Headphones-Categories"/></span>
+                <span><img id="CategoriaIcons" src="../public/Shoes.png" alt="Shoes-Categories"/></span>
+            </div>
+            <div className="DestaquesCategoriasTexts">
+                <h5 id="CategoriasSubtitiles1">Camisetas</h5>
+                <h5 id="CategoriasSubtitiles2">Calças</h5>
+                <h5 id="CategoriasSubtitiles3">Bonés</h5>
+                <h5 id="CategoriasSubtitiles4">Headphones</h5>
+                <h5 id="CategoriasSubtitiles5">Tênis</h5>    
+            </div>
+        </section>
+        </>
     );
 }
 

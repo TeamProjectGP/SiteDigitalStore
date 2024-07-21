@@ -4,12 +4,14 @@
 }
 * {
   margin: 0;
-  background-color: #F5F5F5;
   text-decoration: none;
   list-style: none;
   font-family: Inter;
   box-sizing: border-box;
   background: none;
+}
+body {
+  background-color: #F9F8FE;
 }
 header {
   background-color: #FFFFFF;
@@ -81,6 +83,11 @@ header {
   color: #474747;
   text-decoration: underline #474747;
   text-underline-offset: 3px;
+  transition-duration: 200ms;
+}
+#CadastroButton:hover {
+  color: #8f8d8d;
+  text-decoration:underline #8f8d8d;
 }
 .HeaderButtons #LoginButton {
   width: 114px;
@@ -89,8 +96,11 @@ header {
   border-radius: 4px;
   background-color: #C92071;
   color: white;
+  transition-duration: 300ms;
 }
-
+#LoginButton:hover {
+  background-color: #eb3c90;
+}
 /*Cart Container / Container Carrinho */
 header .CartContainer {
   display: flex;
@@ -355,6 +365,61 @@ header nav ul li .LinkHeader.active {
   color: #FFFFFF;
   background-color: #B5B6F2;
 }
+/*Coleções em Destaque Categorias*/
+.DestaquesCategorias {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.DestaquesCategoriasIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  gap: 39px;
+}
+.DestaquesCategorias #DestaqueTitulo {
+  padding-bottom: 20px;
+}
+.DestaquesCategoriasIcons span {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 8px 10px;
+  border-radius: 50px;
+  user-select: none;
+}
+.DestaquesCategoriasIcons #CategoriaIcons {
+  width: 100%;
+  transition: 0.3s;
+  filter: sepia(0%) saturate(4800%) hue-rotate(308deg) brightness(0%) contrast(0%);
+  cursor: pointer;
+}
+.DestaquesCategoriasIcons #CategoriaIcons:hover {
+  filter:  sepia(62%) saturate(4800%) hue-rotate(308deg) brightness(90%) contrast(170%);
+  transition: 0.3s;
+}
+.DestaquesCategoriasTexts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: .75px;
+  padding-right: 10px;
+  gap: 65px;
+}
+.DestaquesCategoriasTexts #CategoriasSubtitiles {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.75px;
+  text-align: center;
+  color: #474747;
+  user-select: none;
+
+}
 /*Footer Container*/
 .FooterContainer {
   padding: 16px;
@@ -410,11 +475,13 @@ header nav ul li .LinkHeader.active {
 }
 .FooterSocialContainer img {
   cursor: pointer;
-  transition-duration: 200ms;
+  transition: 200ms;
+  filter: invert(0%) sepia(0%) saturate(4700%) hue-rotate(308deg) brightness(100%) contrast(100%);
 }
 .FooterSocialContainer img:hover {
   /*Ferramenta Utilizada https://codepen.io/jumarjuaton/full/mdJYWYq */
   filter: invert(24%) sepia(65%) saturate(4700%) hue-rotate(308deg) brightness(90%) contrast(190%);
+  transition: 200ms;
 }
 .FooterInformationContainer, .FooterCategoryContainer, .FooterContatoContainer {
   width: 30%;
