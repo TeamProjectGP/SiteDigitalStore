@@ -254,3 +254,30 @@ export const Layout = ({children}) => {
         </>
     );
 }
+
+export const CadastroTela = () => {
+    return (
+        <>
+        <Layout>
+            <main>
+                <section>
+                <h1>Cadastro</h1>
+                </section>
+            </main>
+        </Layout>
+        </>
+    );
+}
+export const LoginTela = () => {
+    return (
+        <>
+        <Layout>
+            <main>
+                <section>
+                <h1>Login</h1>
+                </section>
+            </main>
+        </Layout>
+        </>
+    );
+}

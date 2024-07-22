@@ -656,6 +656,71 @@ header nav ul li .LinkHeader.active {
 .OfertaEspecialButton button:hover {
   background-color: #eb3c90;
 }
+/*ProductListingPage*/
+.ProductListingContainerMain {
+  background-color: #F9F8FE;
+;
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+}
+.ProductListingQuantidade {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-bottom: 20px;
+}
+.ProductListingQuantidade h5, .ProductListingQuantidade h6 {
+  color: #474747;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: .75px;
+}
+.ProductListingQuantidade h6 {
+  line-height: 28px;
+  font-weight: 400;
+}
+.ProductListingFilterContainer {
+  width: 308px;
+  height: 720px;
+  padding: 30px;
+  background-color: #FFFFFF;
+}
+.ProductListingFilterContainer #Textfilter {
+  color: #474747;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: .75px;
+  padding-bottom: 15px;
+}
+.ProductListingFilterContainer hr {
+  border: 1px solid #CCCCCC;
+}
+.ProductsMarkaContainer, .ProductsCategoriasContainer, .ProductsEstadoContainer {
+  margin-top: 20px;
+  width: 109px;
+  height: 182px;
+  padding: 2px;
+}
+.ProductsCategoriasContainer {
+  margin-top: -20px;
+}
+.ProductsEstadoContainer {
+  margin-top: -20px;
+}
+.FilterCheckBoxMainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.FilterCheckBoxContainer {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  gap: 5px;
+}
 /*Footer Container*/
 .FooterContainer {
   padding: 16px;

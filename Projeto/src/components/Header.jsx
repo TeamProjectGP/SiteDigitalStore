@@ -12,8 +12,8 @@ const Header = () => {
                 <box-icon id="SearchButton" name='search'></box-icon>
             </div>
             <div class="HeaderButtons">
-                <Link to={"/categorias"}id="CadastroButton">Cadastre-se</Link>
-                <Link to={"/categorias"} id="LoginButton">Entrar</Link>
+                <Link to={"/cadastro"}id="CadastroButton">Cadastre-se</Link>
+                <Link to={"/login"} id="LoginButton">Entrar</Link>
             </div>
             <div class="CartContainer">
                 <img src="../src/assets/mini-cart.svg" id="CartButton" size="cssSize" alt="cart"></img>
