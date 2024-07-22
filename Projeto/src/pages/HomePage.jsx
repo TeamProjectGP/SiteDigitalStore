@@ -1,4 +1,4 @@
-import  { ColecaoDestaque, Layout, SliderHomePage } from "../components/Section";
+import  { ColecaoDestaque, Layout, OfertaEspecial, ProdutosAlta, SliderHomePage } from "../components/Section";
 
 const HomePage = () => {
     return (
@@ -7,6 +7,8 @@ const HomePage = () => {
                 <section>
                     <SliderHomePage />
                     <ColecaoDestaque />
+                    <ProdutosAlta />
+                    <OfertaEspecial />
                 </section>
             </main>
         </Layout>
