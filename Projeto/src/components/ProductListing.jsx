@@ -1,9 +1,22 @@
 const ProductListing = () => {
     return (
         <section class="ProductListingContainerMain">
-            <div className="ProductListingQuantidade">
-                <h5 id="ProductResultName">Resultados para “Tênis” - </h5>
-                <h6 id="ProductQuantity">389 Produtos</h6>
+            <div className="ProductsListingTop">
+                <div className="ProductListingQuantidade">
+                    <h5 id="ProductResultName">Resultados para “Tênis” - </h5>
+                    <h6 id="ProductQuantity">389 Produtos</h6>
+                </div>
+                <div className="OrdenarProdutosContainer">
+                    <select name="OrdenarProdutosSeletor" id="OrdenarProdutos">
+                            <option class="OrdenarProdutosOption">
+                                <h5 id="h5ProdutosSelect">Ordenar por: </h5>
+                                <span>mais relevantes</span>
+                            </option>
+                    </select>
+                    <div className="OrdenarProdutosSeletorIcon">
+                        <i  class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
             </div>
             <div className="ProductListingFilterContainer">
                 <h5 id="Textfilter">Filtrar por</h5>
@@ -12,24 +25,39 @@ const ProductListing = () => {
                     <h5 id="TextCheckbox">Marka</h5>
                     <div class="FilterCheckBoxMainContainer">
                         <div class="FilterCheckBoxContainer">
-                            <input type="checkbox" name="Adidas" id="MarkaProductFilter" />
-                            <h6>Adidas</h6>
+                            <div class="Switch-checkbox">
+                                <input type="checkbox" class="MarkaProductFilter" name="MarkaProductFilter" id="Adidas" />
+                                <span class="checkboxmark"></span>
+                            </div>
+                            <label for="Adidas">Adidas</label>
                         </div>
                         <div class="FilterCheckBoxContainer">
-                            <input type="checkbox" name="Calenciaga" id="MarkaProductFilter" />
-                            <h6>Calenciaga</h6>
+                            <div class="Switch-checkbox">
+                                <input type="checkbox" class="MarkaProductFilter" name="Calenciaga" id="Calenciaga" />
+                                <span class="checkboxmark"></span>
+                            </div>
+                            <label for="Calenciaga">Calenciaga</label>
                         </div>
                         <div class="FilterCheckBoxContainer">
-                            <input type="checkbox" name="K-Swiss" id="MarkaProductFilter" />
-                            <h6>K-Swiss</h6>
+                            <div class="Switch-checkbox">
+                                <input type="checkbox" class="MarkaProductFilter" name="K-Swiss" id="K-Swiss" />
+                                <span class="checkboxmark"></span>
+                            </div>
+                            <label for="K-Swiss">K-Swiss</label>
                         </div>
                         <div class="FilterCheckBoxContainer">
-                            <input type="checkbox" name="Nike" id="MarkaProductFilter" />
-                            <h6>Nike</h6>
+                            <div class="Switch-checkbox">
+                                <input type="checkbox" name="MarkaProductFilter" id="Nike" />
+                                <span class="checkboxmark"></span>
+                            </div>
+                            <label for="Nike">Nike</label>
                         </div>
                         <div class="FilterCheckBoxContainer">
-                            <input type="checkbox" name="Puma" id="MarkaProductFilter" />
-                            <h6>Puma</h6>
+                            <div class="Switch-checkbox">
+                                <input type="checkbox" name="MarkaProductFilter" id="Puma" />
+                                <span class="checkboxmark"></span>
+                            </div>
+                            <label for="Puma">Puma</label>
                         </div>
                     </div>
                 </div>
@@ -37,24 +65,56 @@ const ProductListing = () => {
                     <h5 id="TextCheckbox">Categorias</h5>
                     <div class="FilterCheckBoxMainContainer">
                         <div class="FilterCheckBoxContainer">
-                            <input type="checkbox" name="EsporteELazer" id="CategoriaProductFilter" />
-                            <h6>Esporte e Lazer</h6>
+                            <div class="Switch-checkbox">
+                                <input type="checkbox" name="CategoriaProductFilter" id="EsporteELazer" />
+                                <span class="checkboxmark"></span>
+                            </div>
+                            <label for="EsporteELazer">Esporte e Lazer</label>
                         </div>
                         <div class="FilterCheckBoxContainer">
-                            <input type="checkbox" name="Casual" id="CategoriaProductFilter" />
-                            <h6>Casual</h6>
+                        <div class="Switch-checkbox">
+                                <input type="checkbox" name="CategoriaProductFilter" id="Casual" />
+                                <span class="checkboxmark"></span>
+                                </div>
+                            <label for="Casual">Casual</label>
                         </div>
                         <div class="FilterCheckBoxContainer">
-                            <input type="checkbox" name="Utilitario" id="CategoriaProductFilter" />
-                            <h6>Utilitário</h6>
+                            <div class="Switch-checkbox">
+                                <input type="checkbox" name="CategoriaProductFilter" id="Utilitario" />
+                                <span class="checkboxmark"></span>
+                            </div>
+                            <label for="Utilitario">Utilitário</label>
                         </div>
                         <div class="FilterCheckBoxContainer">
-                            <input type="checkbox" name="Corrida" id="CategoriaProductFilter" />
-                            <h6>Corrida</h6>
+                            <div class="Switch-checkbox">
+                                <input type="checkbox" name="CategoriaProductFilter" id="Corrida" />
+                                <span class="checkboxmark"></span>
+                            </div>
+                            <label for="Corrida">Corrida</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="ProductsCategoriasContainer">
+                    <h5 id="TextCheckbox">Gênero</h5>
+                    <div class="FilterCheckBoxMainContainer">
+                        <div class="FilterCheckBoxContainer">
+                            <div class="Switch-checkbox">
+                                <input type="checkbox" name="GeneroProductFilter" id="Masculino" />
+                                <span class="checkboxmark"></span>
+                            </div>
+                            <label for="Masculino">Masculino</label>
                         </div>
                         <div class="FilterCheckBoxContainer">
-                            <input type="checkbox" name="Puma" id="CategoriaProductFilter" />
-                            <h6>Puma</h6>
+                        <div class="Switch-checkbox">
+                                <input type="checkbox" name="GeneroProductFilter" id="Feminino" />
+                                </div>
+                            <label for="Feminino">Feminino</label>
+                        </div>
+                        <div class="FilterCheckBoxContainer">
+                            <div class="Switch-checkbox">
+                                <input type="checkbox" name="GeneroProductFilter" id="Unisex" />
+                            </div>
+                            <label for="Unisex">Unisex</label>
                         </div>
                     </div>
                 </div>
@@ -62,12 +122,16 @@ const ProductListing = () => {
                     <h5 id="TextCheckbox">Estado</h5>
                     <div class="FilterCheckBoxMainContainer">
                         <div class="FilterCheckBoxContainer">
-                            <input type="radio" name="Novo" id="EstadoProductFilter" />
-                            <h6>Novo</h6>
+                            <div class="Switch-Radio">
+                                <input type="radio" name="EstadoProductFilter" id="NovoEstado" />
+                            </div>
+                            <label for="NovoEstado">Novo</label>
                         </div>
                         <div class="FilterCheckBoxContainer">
-                            <input type="radio" name="Usado" id="EstadoProductFilter" />
-                            <h6>Usado</h6>
+                            <div class="Switch-Radio">
+                                <input type="radio" name="EstadoProductFilter" id="UsadoEstado" />
+                            </div>
+                            <label for ="UsadoEstado">Usado</label>
                         </div>
                     </div>
                 </div>
