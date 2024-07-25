@@ -424,7 +424,7 @@ header nav ul li .LinkHeader.active {
   user-select: none;
 }
 /*Produtos em Alta Container*/
-.ProdutosAltaContainer {
+.ProdutosAltaContainer, .ProdutosFilterContainer {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -468,7 +468,7 @@ header nav ul li .LinkHeader.active {
   color: #eb3c90;
   fill: #eb3c90;
 }
-.ProdutosAltaCardContainer {
+.ProdutosAltaCardContainer, .ProdutosFilterCardContainer {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -476,7 +476,7 @@ header nav ul li .LinkHeader.active {
   padding: 20px;
   gap: 20px;
 }
-.ProdutosAltaContainer .ProdutosAltaCard {
+.ProdutosAltaContainer .ProdutosAltaCard, .ProdutosFilterContainer .ProdutosFilterCard{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -487,7 +487,7 @@ header nav ul li .LinkHeader.active {
   border-radius: 8px;
   box-shadow: 0px 5px 5px #302e2e0d;
 }
-.ProdutosAltaCard #CardDiscountAlta{
+.ProdutosAltaCard #CardDiscountAlta, .ProdutosFilterCard #CardDiscountAlta{
   display: flex;
   background-color: #E7FF86;
   border-radius: 12px;
@@ -501,7 +501,7 @@ header nav ul li .LinkHeader.active {
   text-transform: uppercase;
   text-align: center;
 }
-.ProdutosAltaCardImg {
+.ProdutosAltaCardImg, .ProdutosFilterCardImg {
   display: flex;
   align-items: center;
   width: 100%;
@@ -509,14 +509,14 @@ header nav ul li .LinkHeader.active {
   margin-top: -20px;
   margin-left: -15px;
 }
-.ProdutosAltaCard img{
+.ProdutosAltaCard img, .ProdutosFilterCardImg img{
   width: 248px;
   rotate: -30deg;
   transition: linear;
   transition-duration: 200ms;
   cursor: pointer;
 }
-.ProdutosAltaCard img:hover {
+.ProdutosAltaCard img:hover, .ProdutosFilterCardImg img:hover {
   width: 252px;
 }
 .ProdutosCardReferenceType {
@@ -526,7 +526,7 @@ header nav ul li .LinkHeader.active {
   margin-left: 0px;
   user-select: none;
 }
-.ProdutosAltaCardReferences .ProdutosCardReferenceType #ProdutoTipo {
+.ProdutosAltaCardReferences .ProdutosCardReferenceType #ProdutoTipo, .ProdutosFilterCardReferences .ProdutosCardReferenceType #ProdutoTipo {
   color: #8F8F8F;
   font-size: 12px;
   font-weight: 700;
@@ -540,7 +540,7 @@ header nav ul li .LinkHeader.active {
   gap: 25px;
   margin-left: 0px;
 }
-.ProdutosAltaCardReferences .ProdutosCardReferenceName #ProdutoName{
+.ProdutosAltaCardReferences .ProdutosCardReferenceName #ProdutoName, .ProdutosFilterCardReferences .ProdutosCardReferenceName #ProdutoName{
   font-size: 24px;
   font-weight: 400;
   line-height: 38px;
@@ -552,7 +552,7 @@ header nav ul li .LinkHeader.active {
   cursor: pointer;
   text-decoration: none;
 }
-.ProdutosAltaCardReferences .ProdutosCardReferenceName #ProdutoName:hover {
+.ProdutosAltaCardReferences .ProdutosCardReferenceName #ProdutoName:hover,.ProdutosFilterCardReferences .ProdutosCardReferenceName #ProdutoName:hover {
   color: #C92071;
 }
 .ProdutosCardReferencePrices {
@@ -665,12 +665,25 @@ header nav ul li .LinkHeader.active {
   display: flex;
   flex-direction: column;
   justify-content: start;
+  opacity: 1;
+  visibility: visible;
+  transition: linear 200ms;
+}
+#ProductListingContainerMainActive.inactive {
+  visibility: hidden;
+  opacity: 0;
 }
 .ProductsListingTop {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 50px;
+}
+.ProductsListingMain {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  display: flex;
 }
 .OrdenarProdutosContainer {
   display: flex;
@@ -722,6 +735,7 @@ select::before ,select::after #h5ProdutosSelect {
 }
 .ProductListingFilterContainer {
   width: 308px;
+  height: 100%;
   padding: 30px;
   background-color: #FFFFFF;
   display: flex;
@@ -830,6 +844,14 @@ select::before ,select::after #h5ProdutosSelect {
 }
 .Switch-Radio input[type="radio"]:checked::after {
   display: list-item;
+}
+.ProductsListingMain .ProdutosFilterContainer {
+  padding: 0px;
+}
+.ProductsListingMain .ProdutosAltaContainer .ProdutosAltaCardContainer {
+  padding: 0px;
+  margin-bottom: px;
+  margin-left: 20px;
 }
 /*Footer Container*/
 .FooterContainer {

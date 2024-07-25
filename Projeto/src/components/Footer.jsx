@@ -11,9 +11,9 @@ const Footer = () => {
                         <FooterLogo />
                         <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</h5>
                         <div class="FooterSocialContainer">
-                            <img src="./src/assets/facebook.svg" alt="Facebook-Logo" />
-                            <img src="./src/assets/instagram.svg" alt="Instagram-Logo" />
-                            <img src="./src/assets/twitter.svg" alt="Twitter-Logo" />
+                            <img src="../src/assets/facebook.svg" alt="Facebook-Logo" />
+                            <img src="../src/assets/instagram.svg" alt="Instagram-Logo" />
+                            <img src="../src/assets/twitter.svg" alt="Twitter-Logo" />
                         </div>
                     </div>
                     <div class="FooterInformationContainer">

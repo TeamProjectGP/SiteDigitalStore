@@ -4,6 +4,7 @@ import HomePage from "../pages/HomePage";
 import MyRequests from "../pages/MyRequests";
 import NotFound from "../pages/NotFound";
 import ProductListingPage from "../pages/ProductListingPage";
+import ProductViewPage from "../pages/ProductViewPage";
 
 const Paths = () => {
     return (
@@ -11,6 +12,7 @@ const Paths = () => {
             <Routes>
                 <Route path="/" element={<HomePage />}/>
                 <Route path="/produtos" element={<ProductListingPage />}/>
+                <Route path="/produtos/:Id" element={<ProductViewPage />}/>
                 <Route path="/pedidos" element={<MyRequests />}/>
                 <Route path="/cadastro" element={<CadastroTela />}/>
                 <Route path="/login" element={<LoginTela />}/>
