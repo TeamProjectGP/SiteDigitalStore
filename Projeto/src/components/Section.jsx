@@ -120,7 +120,7 @@ export const ProdutosAlta = () => {
             <div class="ProdutosAltaContainer">
                 <div class="ProdutosAltaTitles">
                     <h4 id="ProdutosAltaTitulo">Produtos em alta</h4>
-                    <h5>Ver todos <box-icon size="cssSize" name='right-arrow-alt'></box-icon></h5>
+                    <Link to={"/produtos"}><h5>Ver todos <box-icon size="cssSize" name='right-arrow-alt'></box-icon></h5></Link>
                 </div>
                 <div className="ProdutosAltaCardContainer">
                     <div class="ProdutosAltaCard">
@@ -172,13 +172,11 @@ export const ProdutosAlta = () => {
                 </div>
                 <div className="ProdutosAltaCardContainer">
                     <div class="ProdutosAltaCard">
-                        <h2 id="CardDiscountAlta">30% off</h2>
                         <div class="ProdutosAltaCardImg">
                             <img src="../public/ProdutoAlta.png" alt="" />
                         </div>
                     </div>
                     <div class="ProdutosAltaCard">
-                        <h2 id="CardDiscountAlta">30% off</h2>
                         <div class="ProdutosAltaCardImg">
                             <img src="../public/ProdutoAlta.png" alt="" />
                         </div>

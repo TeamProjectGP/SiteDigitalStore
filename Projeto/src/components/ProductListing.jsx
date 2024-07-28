@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const ProductListing = () => {
     return (
-        <section class="ProductListingContainerMain" id="ProductListingContainerMainActive">
+        <section class="ProductListingContainerMain">
             <div className="ProductsListingTop">
                 <div className="ProductListingQuantidade">
                     <h5 id="ProductResultName">Resultados para “Tênis” - </h5>
@@ -181,13 +181,11 @@ const ProductListing = () => {
                     </div>
                     <div className="ProdutosFilterCardContainer">
                         <div class="ProdutosFilterCard">
-                            <h2 id="CardDiscountAlta">30% off</h2>
                             <div class="ProdutosFilterCardImg">
                                 <Link to={"/produtos/:Id"}><img src="../public/ProdutoAlta.png" alt=""/></Link>
                             </div>
                         </div>
                         <div class="ProdutosFilterCard">
-                            <h2 id="CardDiscountAlta">30% off</h2>
                             <div class="ProdutosFilterCardImg">
                                 <Link to={"/produtos/:Id"}><img src="../public/ProdutoAlta.png" alt=""/></Link>
                             </div>
@@ -220,13 +218,11 @@ const ProductListing = () => {
                     </div>
                     <div className="ProdutosFilterCardContainer">
                         <div class="ProdutosFilterCard">
-                            <h2 id="CardDiscountAlta">30% off</h2>
                             <div class="ProdutosFilterCardImg">
                                 <Link to={"/produtos/:Id"}><img src="../public/ProdutoAlta.png" alt=""/></Link>
                             </div>
                         </div>
                         <div class="ProdutosFilterCard">
-                            <h2 id="CardDiscountAlta">30% off</h2>
                             <div class="ProdutosFilterCardImg">
                                 <Link to={"/produtos/:Id"}><img src="../public/ProdutoAlta.png" alt=""/></Link>
                             </div>
@@ -259,13 +255,11 @@ const ProductListing = () => {
                     </div>
                     <div className="ProdutosFilterCardContainer">
                         <div class="ProdutosFilterCard">
-                            <h2 id="CardDiscountAlta">30% off</h2>
                             <div class="ProdutosFilterCardImg">
                                 <Link to={"/produtos/:Id"}><img src="../public/ProdutoAlta.png" alt=""/></Link>
                             </div>
                         </div>
                         <div class="ProdutosFilterCard">
-                            <h2 id="CardDiscountAlta">30% off</h2>
                             <div class="ProdutosFilterCardImg">
                                 <Link to={"/produtos/:Id"}><img src="../public/ProdutoAlta.png" alt=""/></Link>
                             </div>
@@ -298,13 +292,11 @@ const ProductListing = () => {
                     </div>
                     <div className="ProdutosFilterCardContainer">
                         <div class="ProdutosFilterCard">
-                            <h2 id="CardDiscountAlta">30% off</h2>
                             <div class="ProdutosFilterCardImg">
                                 <Link to={"/produtos/:Id"}><img src="../public/ProdutoAlta.png" alt=""/></Link>
                             </div>
                         </div>
                         <div class="ProdutosFilterCard">
-                            <h2 id="CardDiscountAlta">30% off</h2>
                             <div class="ProdutosFilterCardImg">
                                 <Link to={"/produtos/:Id"}><img src="../public/ProdutoAlta.png" alt=""/></Link>
                             </div>
