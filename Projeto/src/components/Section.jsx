@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
+import { HeaderLogo } from "./Logo";
 
 export const SliderHomePage = () => {
     return (
@@ -256,13 +257,28 @@ export const Layout = ({children}) => {
 export const CadastroTela = () => {
     return (
         <>
-        <Layout>
+            <header class="Cadastro-LoginHeader">
+                <HeaderLogo />
+            </header>
             <main>
-                <section>
-                <h1>Cadastro</h1>
+                <section class="CadastroTela1Container">
+                    <div class="CadastroTela1FormContainer">
+                        <h2>Crie sua conta</h2>
+                        <h5>Já possui uma conta? Entre <Link to={"/login"}>aqui</Link>.</h5>
+                        <form class="ModalCreateAccount-1">
+                            <h4>Email *</h4>
+                            <input id="CreateAccountEmail" type="email" required placeholder="Insira seu email"/>
+                            <input id="CreateAccountButton" type="submit" value={"Criar Conta"}/>
+                        </form>
+                        <div class="CadastroTela1FormBottom">
+                            <h5>Ou faça login com</h5>
+                            <img src="../public/gmail-icon.png" alt="" />
+                            <img src="../public/facebook-icon.png" alt="" />
+                        </div>
+                    </div>
                 </section>
             </main>
-        </Layout>
+            <Footer />
         </>
     );
 }

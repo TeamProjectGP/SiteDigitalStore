@@ -9,6 +9,8 @@
   font-family: Inter;
   box-sizing: border-box;
   background: none;
+  text-decoration: none;
+  list-style-type: none;
 }
 body {
   background-color: #F9F8FE;
@@ -469,7 +471,6 @@ header nav ul li .LinkHeader.active {
   fill: #eb3c90;
 }
 .ProdutosAltaCardContainer, .ProdutosFilterCardContainer {
-  width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -882,7 +883,7 @@ select::before ,select::after #h5ProdutosSelect {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 32px;
+  padding: 16px;
   gap: 30px;
 }
 .SliderGalleryProduct {
@@ -947,6 +948,7 @@ select::before ,select::after #h5ProdutosSelect {
 }
 .ProductsDetailsRatingContainer #RatingStars {
   fill: #F6AA1C;
+  fill: url();
   width: 20px;
   cursor: pointer;
 }
@@ -1148,7 +1150,6 @@ select::before ,select::after #h5ProdutosSelect {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 30px;
   gap: 20px;
 }
 .ProductsDetailsSliderMiniature {
@@ -1181,6 +1182,126 @@ select::before ,select::after #h5ProdutosSelect {
 }
 #ProductsDetailsSliderMiniature5 {
   background-color: #E8DFCF;
+}
+/*Telas de Cadastro*/
+.Cadastro-LoginHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 100px;
+  height: 80px;
+}
+.Cadastro-LoginHeader #LogoHeader {
+  width: 172px;
+}
+.CadastroTela1Container {
+  width: 100%;
+  height: 1377px;
+  padding: 100px;
+  background: linear-gradient(180deg, #B5B6F2 0%, #EFEFFF 100%);
+}
+.CadastroTela1FormContainer {
+  background-color: #FFFFFF;
+  width: 583px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px;
+  gap: 30px;
+  border-radius: 4px;
+}
+.CadastroTela1FormContainer h2 {
+  color: #1F1F1F;
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.CadastroTela1FormContainer h5 {
+  color: #474747;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: .75px;
+  text-align: center;
+}
+.CadastroTela1FormContainer a {
+  color: #474747;
+  text-decoration: underline #474747;
+  text-underline-offset: 3px;
+  transition: linear 200ms;
+}
+.CadastroTela1FormContainer a:hover {
+  color: #C92071;
+  text-decoration: underline #C92071;
+}
+.ModalCreateAccount-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ModalCreateAccount-1 h4 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: .75px;
+  text-align: left;
+}
+.ModalCreateAccount-1 #CreateAccountEmail {
+  background-color: rgb(71, 71, 71, 4%);
+  outline: none;
+  border: none;
+  padding: 5px;
+  padding-left: 24px;
+  width: 523px;
+  height: 60px;
+  color: #666666;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.75px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.ModalCreateAccount-1 #CreateAccountEmail::placeholder {
+  color: rgb(102, 102, 102, 60%);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.75px;
+  text-align: left;
+}
+.ModalCreateAccount-1 #CreateAccountButton {
+  background-color: #C92071;
+  color: #F5F5F5;
+  width: 523px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: .75px;
+  text-align: center;
+  cursor: pointer;
+  transition: linear 200ms;
+}
+.ModalCreateAccount-1 #CreateAccountButton:hover {
+  background-color: #eb3c90;
+}
+.CadastroTela1FormBottom {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  gap: 15px;
+}
+.CadastroTela1FormBottom img {
+  cursor: pointer;
+  width: 24px;
 }
 /*Footer Container*/
 .FooterContainer {
